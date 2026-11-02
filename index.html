@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Evaluación Grupal 2 | Washington</title>
+<style>
+* { box-sizing: border-box; }
+body {
+    margin: 0;
+    background: #edf2f5;
+    color: #243442;
+    font-family: Arial, sans-serif;
+    line-height: 1.65;
+}
+main {
+    max-width: 860px;
+    margin: 65px auto;
+    padding: 42px;
+    background: white;
+    border-radius: 12px;
+    border-top: 6px solid #265b76;
+}
+small, footer { color: #547083; }
+h1 { font-size: 32px; line-height: 1.2; }
+h2 { font-size: 21px; margin-top: 30px; }
+.links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin: 28px 0;
+}
+.links a {
+    padding: 12px 18px;
+    background: #265b76;
+    color: white;
+    text-decoration: none;
+    border-radius: 6px;
+}
+.links a:hover { background: #173f55; }
+.formula {
+    background: #edf3f6;
+    padding: 18px;
+    overflow-wrap: anywhere;
+}
+footer { margin-top: 32px; font-size: 14px; }
+@media(max-width: 650px) {
+    main { margin: 20px; padding: 25px; }
+    h1 { font-size: 26px; }
+}
+</style>
+</head>
+<body>
+<main>
+<small>Introducción a Datos Espaciales | Tarea grupal 2</small>
+
+<h1>Evaluación del contexto de una propiedad en Washington</h1>
+
+<p>
+Comparación de los condados de Washington utilizando datos de 2023.
+El cuaderno presenta la preparación de datos, el análisis espacial,
+los mapas y la interpretación de los resultados.
+</p>
+
+<div class="links">
+<a href="https://colab.research.google.com/github/Jose-Bautista-gnss/Evaluacion_Grupal_2/blob/main/T2_Washington_2023_GitHub_V2.ipynb" target="_blank" rel="noopener">Abrir en Google Colab</a>
+<a href="https://github.com/Jose-Bautista-gnss/Evaluacion_Grupal_2/blob/main/T2_Washington_2023_GitHub_V2.ipynb" target="_blank" rel="noopener">Ver cuaderno en GitHub</a>
+<a href="https://raw.githubusercontent.com/Jose-Bautista-gnss/Evaluacion_Grupal_2/main/T2_Washington_2023_GitHub_V2.ipynb">Descargar cuaderno V2</a>
+</div>
+
+<h2>Indicador utilizado</h2>
+<div class="formula">
+(SCF_ASSAULT + SCF_DRUG_CR) / POP_TOTAL
+</div>
+
+<p>
+El indicador también se expresa por cada 10 000 habitantes.
+Las variables corresponden a casos ingresados al Tribunal Superior
+por agresiones y drogas.
+</p>
+
+<h2>Alcance del análisis</h2>
+<p>
+La comparación estadística se realiza por condado. Las zonas censales
+permiten contextualizar la propiedad, pero no aportan observaciones
+propias de criminalidad a esa escala.
+</p>
+
+<h2>Cómo ejecutar el trabajo</h2>
+<p>
+Abre el cuaderno en Google Colab y ejecuta las celdas en orden.
+Los datos se descargan desde GitHub. Para conservar tus cambios,
+guarda una copia en tu Google Drive.
+También puedes descargarlo y ejecutarlo en VS Code.
+</p>
+
+<footer>
+Fuentes: Washington State Criminal Justice Data Book y cartografía
+proporcionada en la actividad. Año estadístico: 2023.
+</footer>
+</main>
+</body>
+</html>
